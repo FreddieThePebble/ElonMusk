@@ -18,10 +18,18 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <img src="https://raw.githubusercontent.com/FreddieThePebble/ElonMusk/main/Elon%20Musk.jpeg" alt="Elon Musk" class="full-screen-image">
+    <img src="https://raw.githubusercontent.com/FreddieThePebble/ElonMusk/main/Elon%20Musk.jpeg" alt="Elon Musk" class="full-screen-image" onclick="playAudio()">
+    <audio id="audio" src="https://raw.githubusercontent.com/FreddieThePebble/ElonMusk/main/Elon%20Musk.mp3"></audio>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+    </script>
 </body>
 </html>
